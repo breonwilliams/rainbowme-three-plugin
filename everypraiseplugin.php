@@ -1,6 +1,6 @@
 <?php
    /*
-   Plugin Name: Rainbow Me Plugin
+   Plugin Name: Rainbow Me Three Plugin
    Plugin URI: http://breonwilliams.com
    Description: adds shortcodes, custom post types, and taxonomies
    Version: 1.1

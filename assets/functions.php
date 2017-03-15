@@ -304,49 +304,7 @@ add_shortcode('popup_listwrap', 'popup_listwrap');
 
 
 
-/*get avatar*/
 
-function slider_avatar() {
-    ob_start();
- ?>
-        <?php if ( is_user_logged_in() ) : ?>
-
-<div class="row">
-    <div class="col-md-6 col-sm-6 col-xs-6">
-                    <?php bp_loggedin_user_avatar( 'type=thumb&width=50&height=50' ); ?>
-    </div>
-
-    <div class="col-md-6 col-sm-6 col-xs-6">
-
-                    <p class="lead">Hello <?php echo bp_core_get_userlink( bp_loggedin_user_id() ); ?>, we have some new episodes! Make sure you go to your profile and <a href="<?php echo bp_loggedin_user_domain() ?>profile/change-avatar/">create your avatar!</a> Click <a href="<?php echo esc_url( home_url( '' ) ); ?>/shows">here</a> to watch episodes.</p>
-
-    </div>
-</div>
-
-
-        <?php else : ?>
-
-
-<div class="row">
-    <div class="col-md-6 col-sm-6 col-xs-6">
-                        <img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/placeholder.png'; ?>">
-    </div>
-
-    <div class="col-md-6 col-sm-6 col-xs-6">
-
-            <p class="lead">Welcome to RainbowMe. Please login or join to enjoy the newest entertainment destination for every child.</p>
-
-    </div>
-</div>
-
-        <?php endif; ?>
-  <?php
-$myvariable = ob_get_clean();
-    return $myvariable;
-    }
-add_shortcode( 'avatar_shortcode', 'slider_avatar' );
-
-/*get avatar end*/
 
 /* Logged In */
 function check_user_li ($params, $content = null){

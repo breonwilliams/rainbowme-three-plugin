@@ -72,13 +72,6 @@
                     ]
                 },
 
-                {
-                    text: 'Avatar',
-                    onclick: function() {
-                                editor.insertContent('[avatar_shortcode]');
-                            }
-                },
-
 
                 {
                     text: 'Recent Posts',
