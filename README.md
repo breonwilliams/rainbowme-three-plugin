@@ -1,1 +1,1 @@
-# rainbowme-three-plugin
+# rainbowme-plugin
