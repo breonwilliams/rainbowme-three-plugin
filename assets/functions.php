@@ -486,12 +486,24 @@ function recent_videos( $atts ) {
     extract( shortcode_atts( array (
         'posts' => 8,
         'ptype' => videos,
+        'vtype' => '',
+        'vagetype' => '',
+        'vprogramtype' => '',
+        'v_ori_syn_type' => '',
+        'order'   =>  'DESC',
+        'orderby' =>  'date',
     ), $atts ) );
 
     // define query parameters based on attributes
     $options = array(
         'posts_per_page' => $posts,
         'post_type' => $ptype,
+        'vtype' => $vtype,
+        'vagetype' => $vagetype,
+        'vprogramtype' => $vprogramtype,
+        'v_ori_syn_type' => $v_ori_syn_type,
+        'order' =>  $order,
+        'orderby' =>  $orderbY,
     );
     $query = new WP_Query( $options );
     // run the loop based on the query

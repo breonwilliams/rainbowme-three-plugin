@@ -85,7 +85,7 @@
                         {
                             text: 'Recent Video Posts',
                             onclick: function() {
-                                editor.insertContent('[recent_videos posts="8" ptype="videos"]');
+                                editor.insertContent('[recent_videos posts="8" ptype="videos" vtype="" vagetype="" vprogramtype="" v_ori_syn_type=""]');
                             }
                         },
                         {
