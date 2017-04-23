@@ -518,7 +518,7 @@ function recent_videos( $atts ) {
 
 <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
-<div class="item" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<div  id="post-<?php the_ID(); ?>" <?php post_class("item"); ?>>
 
 
 
